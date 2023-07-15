@@ -1,0 +1,16 @@
+# Ignore all
+/**
+!.gitignore
+!README.md
+!MAPPINGS.md
+!LICENSE
+
+# But not these configs
+!/fish/
+!/fish/**
+!/nvim/
+!/nvim/**
+!/tmux/
+!/tmux/**
+/tmux/plugins/tmux-sensible
+/tmux/plugins/tpm
