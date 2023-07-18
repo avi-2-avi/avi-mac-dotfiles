@@ -1,4 +1,4 @@
-### Lasted update: 14 Jul 2023
+### Last update: 14 Jul 2023
 
 # Date and Language
 set -x LC_ALL en_US.UTF-8
