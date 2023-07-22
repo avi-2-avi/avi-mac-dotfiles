@@ -22,12 +22,25 @@ packer.startup(function(use)
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
   use 'nvim-telescope/telescope-file-browser.nvim'
+  use 'kyazdani42/nvim-web-devicons' -- File icons
+  use 'windwp/nvim-ts-autotag'
+  use { 'numToStr/Comment.nvim',
+    requires = {
+      'JoosepAlviste/nvim-ts-context-commentstring'
+    }
+  }
+  use 'norcalli/nvim-colorizer.lua'
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
 
   use 'neovim/nvim-lspconfig'           -- LSP
   use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
   use 'glepnir/lspsaga.nvim' -- LSP UIs
+
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
