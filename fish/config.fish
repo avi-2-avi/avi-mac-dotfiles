@@ -10,7 +10,7 @@ set -g theme_date_timezone America/Lima
 # User displays
 set -g theme_display_user no 
 set -g default_user your_normal_user
-set -g theme_display_vi no
+set -g theme_display_vi no 
 set -g theme_display_cmd_duration yes
 set -g theme_title_display_process yes
 set -g theme_title_display_path no 

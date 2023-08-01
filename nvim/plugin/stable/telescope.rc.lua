@@ -56,17 +56,22 @@ vim.keymap.set('n', '\\\\',
     builtin.buffers()
   end)
 -- Grep Help documentation
-vim.keymap.set('n', ';h', 
+vim.keymap.set('n', ';h',
   function()
     builtin.help_tags()
   end)
+-- Live Grep
+vim.keymap.set('n', ';r',
+  function()
+    builtin.live_grep()
+  end)
 -- List results of pickers used
-vim.keymap.set('n', ';;', 
+vim.keymap.set('n', ';;',
   function()
     builtin.resume()
   end)
 -- Lists diagnostics for all opened buffers
-vim.keymap.set('n', ';e', 
+vim.keymap.set('n', ';e',
   function()
     builtin.diagnostics()
   end)

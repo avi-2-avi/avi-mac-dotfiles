@@ -1,10 +1,15 @@
-local status, ts = pcall(require, "nvim-tressitter.configs")
+local status, ts = pcall(require, "nvim-treesitter.configs")
 if (not status) then return end
 
 ts.setup {
   highlight = {
     enable = true,
-    disable = {},
+  },
+  indent = {
+    enable = true,
+  },
+  autotag = {
+    enable = true,
   },
   ensure_installed = {
     "markdown",
@@ -18,13 +23,15 @@ ts.setup {
     "yaml",
     "css",
     "html",
-    "lua"
-  },
-  autotag = {
-    enabled = true,
+    "lua",
+    "vue",
+    "javascript",
+    "dockerfile",
+    "gitignore",
+    "yaml"
   },
   context_commentstring = {
-    enabled = true,
+    enable = true,
     enable_autocmd = false,
   }
 }
