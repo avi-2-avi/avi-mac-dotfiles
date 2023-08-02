@@ -121,9 +121,15 @@ nvim_lsp.astro.setup {
   capabilities = capabilities
 }
 
-nvim_lsp.vuels.setup {
+nvim_lsp.volar.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json' },
+  init_options = {
+    typescript = {
+      tsdk = '/opt/homebrew/lib/node_modules/typescript/lib'
+    }
+  }
 }
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
