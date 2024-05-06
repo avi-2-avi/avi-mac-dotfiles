@@ -28,7 +28,10 @@ ts.setup {
     "javascript",
     "dockerfile",
     "gitignore",
-    "yaml"
+    "yaml",
+    "terraform",
+    "cpp",
+    "scss"
   },
   context_commentstring = {
     enable = true,

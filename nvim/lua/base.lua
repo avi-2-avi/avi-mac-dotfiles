@@ -23,16 +23,17 @@ vim.opt.smarttab = true
 vim.opt.breakindent = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
-vim.opt.ai = true -- Auto indent
-vim.opt.si = true -- Smart indent
-vim.opt.wrap = false -- No wrap lines
+vim.opt.ai = true             -- Auto indent
+vim.opt.si = true             -- Smart indent
+vim.opt.wrap = false          -- No wrap lines
 vim.opt.relativenumber = true -- Relative Number
 vim.opt.backspace = 'start,eol,indent'
-vim.opt.path:append { '**' } -- Finding files - Search down into subfolders
+vim.opt.path:append { '**' }  -- Finding files - Search down into subfolders
 vim.opt.wildignore:append { '*/node_modules/*' }
 vim.opt.foldenable = true
-vim.opt.foldmethod = 'indent' -- Fold method indent
+vim.opt.foldmethod = 'indent'   -- Fold method indent
 vim.opt.foldlevel = 0
+vim.opt.clipboard = "unnamedplus" -- Make clipboard work
 
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
