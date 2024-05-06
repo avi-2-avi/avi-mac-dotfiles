@@ -31,7 +31,7 @@ vim.opt.backspace = 'start,eol,indent'
 vim.opt.path:append { '**' }  -- Finding files - Search down into subfolders
 vim.opt.wildignore:append { '*/node_modules/*' }
 vim.opt.foldenable = true
-vim.opt.foldmethod = 'indent'   -- Fold method indent
+vim.opt.foldmethod = 'indent'     -- Fold method indent
 vim.opt.foldlevel = 0
 vim.opt.clipboard = "unnamedplus" -- Make clipboard work
 
@@ -49,4 +49,4 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 vim.opt.formatoptions:append { 'r' }
 
 -- Mac clipboard
-vim.opt.clipboard:append { 'unnamedplus' }
+vim.opt.clipboard = "unnamed,unnamedplus"

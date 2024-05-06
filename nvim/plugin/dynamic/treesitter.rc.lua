@@ -11,6 +11,9 @@ ts.setup {
   autotag = {
     enable = true,
   },
+  auto_install = true,
+  sync_install = true,
+  ignore_install = {},
   ensure_installed = {
     "markdown",
     "markdown_inline",
@@ -31,12 +34,9 @@ ts.setup {
     "yaml",
     "terraform",
     "cpp",
-    "scss"
+    "scss",
+    "hcl"
   },
-  context_commentstring = {
-    enable = true,
-    enable_autocmd = false,
-  }
 }
 
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()

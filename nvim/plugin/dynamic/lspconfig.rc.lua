@@ -135,6 +135,14 @@ nvim_lsp.volar.setup {
 nvim_lsp.terraformls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  root_pattern = { ".terraform", ".git", ".tf" }
+}
+
+
+nvim_lsp.tflint.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  root_pattern = { ".terraform", ".git", ".tflint.hcl", ".tf" }
 }
 
 -- nvim_lsp.clangd.setup {
@@ -148,11 +156,6 @@ nvim_lsp.pyright.setup {
 }
 
 nvim_lsp.rust_analyzer.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-nvim_lsp.slint_lsp.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
