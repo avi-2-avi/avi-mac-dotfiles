@@ -1,8 +1,8 @@
-### Last update: 22 Jul 2023
+### Last update: 29 May 2024
 
-* Terminal: iTerm2
-* Shell: Fish
-* Nvim + Tmux
+- Terminal: iTerm2
+- Shell: Fish
+- Nvim + Tmux
 
 # Mappings
 
@@ -51,8 +51,8 @@ Move window:
 
 Resize window:
 
-| Mappings         | Action       |
-| ---------------- | ------------ |
+| Mappings       | Action       |
+| -------------- | ------------ |
 | `<C-w><left>`  | Resize left  |
 | `<C-w><right>` | Resize right |
 | `<C-w><up>`    | Resize up    |
@@ -76,14 +76,15 @@ Resize window:
 
 ### LSP Saga
 
-| Mappings             | Action                           |
-| -------------------- | -------------------------------- |
-| `<C-j>`              | Jump to Warn/Error diagnostics   |
-| `K`                  | Hover to docs                    |
-| `gd`                | Go to definition/implementations |
-| While in gd -> `C-t` | Jump back to previous page       |
-| `gr`                 | Rename a variable                |
-| `ca`                 | Code Action (options)            |
+| Mappings             | Action                         |
+| -------------------- | ------------------------------ |
+| `<C-j>`              | Jump to Warn/Error diagnostics |
+| `K`                  | Hover to docs                  |
+| `gi`                 | Go to implementations          |
+| `gd`                 | Go to definition               |
+| While in gd -> `C-t` | Jump back to previous page     |
+| `gr`                 | Rename a variable              |
+| `ca`                 | Code Action (options)          |
 
 ### LSP Config
 
@@ -109,9 +110,9 @@ To go to telescope options:
 
 Inside telescope:
 
-| Mappings | Action                           |
-| -------- | -------------------------------- |
-| `j/k`    | Next/previous                    |
-| `gg/G`   | Select the first/last item       |
-| `M`      | Select middle item               |
-| `N`      | Create new file                  |
+| Mappings | Action                     |
+| -------- | -------------------------- |
+| `j/k`    | Next/previous              |
+| `gg/G`   | Select the first/last item |
+| `M`      | Select middle item         |
+| `N`      | Create new file            |
