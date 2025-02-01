@@ -3,6 +3,9 @@
 local status, nvim_lsp = pcall(require, "lspconfig")
 if (not status) then return end
 
+local status2, util = pcall(require, "lspconfig/util")
+if (not status2) then return end
+
 local protocol = require('vim.lsp.protocol')
 
 local augroup_format = vim.api.nvim_create_augroup("Format", { clear = true })
@@ -161,6 +164,33 @@ nvim_lsp.rust_analyzer.setup {
   capabilities = capabilities,
 }
 
+nvim_lsp.svelte.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+nvim_lsp.gopls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { "gopls" },
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+  root_dir = util.root_pattern("go.mod", "go.work", ".git"),
+  settings = {
+    gopls = {
+      completeUnimported = true,
+      usePlaceholders = true,
+      analyses = {
+        unusedparams = true
+      }
+    }
+  }
+}
+
+nvim_lsp.phpactor.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
     underline = true,
@@ -183,6 +213,6 @@ vim.diagnostic.config({
   },
   update_in_insert = true,
   float = {
-    source = "always", -- Or "if_many"
+    source = true, -- Or "if_many"
   },
 })

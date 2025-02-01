@@ -32,7 +32,9 @@ treesitter.setup {
     "terraform",
     "cpp",
     "scss",
-    "hcl"
+    "hcl",
+    "svelte",
+    "go"
   },
 }
 

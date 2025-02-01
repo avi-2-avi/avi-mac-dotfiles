@@ -5,6 +5,10 @@
 !LICENSE
 
 # But not these configs
+!/kitty/
+!/kitty/**
+!/ghostty/
+!/ghostty/**
 !/fish/
 !/fish/**
 !/nvim/

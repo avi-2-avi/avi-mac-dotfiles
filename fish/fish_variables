@@ -1,6 +1,12 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export --path GOPATH:/Users/cristinavidal/go
+SETUVAR --export --path PATH:/Users/cristinavidal/\x2econfig/herd\x2dlite/bin\x1e/Library/Java/JavaVirtualMachines/jdk\x2d21\x2ejdk/Contents/Home/bin\x1e/Library/Java/JavaVirtualMachines/jdk\x2d21\x2ejdk/Contents/Home/bin\x1e/Applications/GoLand\x2eapp/Contents/MacOS\x1e/Applications/IntelliJ\x20IDEA\x2eapp/Contents/MacOS\x1e/Users/cristinavidal/go/bin\x1e/opt/homebrew/opt/llvm/bin\x1e/Users/cristinavidal/\x2ecargo/bin\x1e/opt/homebrew/sbin\x1e/Users/cristinavidal/\x2espicetify\x1e/opt/homebrew/bin\x1e/Library/Java/JavaVirtualMachines/jdk\x2d21\x2ejdk/Contents/Home/bin\x1e/Library/Java/JavaVirtualMachines/jdk\x2d21\x2ejdk/Contents/Home/bin\x1e/Users/cristinavidal/miniconda3/bin\x1e/Users/cristinavidal/miniconda3/condabin\x1e/Users/cristinavidal/\x2elocal/share/nvm/v22\x2e11\x2e0/bin\x1e/usr/local/bin\x1e/System/Cryptexes/App/usr/bin\x1e/usr/bin\x1e/bin\x1e/usr/sbin\x1e/sbin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/local/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/appleinternal/bin\x1e/Library/Apple/usr/bin\x1e/Applications/VMware\x20Fusion\x2eapp/Contents/Public\x1e/usr/local/share/dotnet\x1e\x7e/\x2edotnet/tools\x1e/usr/local/go/bin\x1e/Library/Frameworks/Mono\x2eframework/Versions/Current/Commands\x1e/Applications/kitty\x2eapp/Contents/MacOS\x1e/Users/cristinavidal/Library/Android/sdk/emulator\x1e/Users/cristinavidal/Library/Android/sdk/platform\x2dtools\x1e/Users/cristinavidal/Library/Android/sdk/emulator\x1e/Users/cristinavidal/Library/Android/sdk/platform\x2dtools\x1e/Users/cristinavidal/Library/Android/sdk/emulator\x1e/Users/cristinavidal/Library/Android/sdk/platform\x2dtools\x1e/Users/cristinavidal/Library/Android/sdk/emulator\x1e/Users/cristinavidal/Library/Android/sdk/platform\x2dtools
 SETUVAR __fish_initialized:3400
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish
+SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:blue
@@ -29,4 +35,5 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/opt/homebrew/opt/llvm/bin\x1e/Users/cristinavidal/\x2ecargo/bin\x1e/opt/homebrew/sbin\x1e/Users/cristinavidal/\x2espicetify\x1e/opt/homebrew/bin
+SETUVAR fish_user_paths:/Applications/GoLand\x2eapp/Contents/MacOS\x1e/Applications/IntelliJ\x20IDEA\x2eapp/Contents/MacOS\x1e/Users/cristinavidal/go/bin\x1e/opt/homebrew/opt/llvm/bin\x1e/Users/cristinavidal/\x2ecargo/bin\x1e/opt/homebrew/sbin\x1e/Users/cristinavidal/\x2espicetify\x1e/opt/homebrew/bin
+SETUVAR nvm_default_version:lts

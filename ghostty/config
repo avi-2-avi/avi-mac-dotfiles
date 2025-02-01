@@ -1,0 +1,76 @@
+# This is the configuration file for Ghostty.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# Reloading: cmd+shift+,
+
+# Font
+# ==========================
+font-family = SauceCodePro Nerd Font
+font-style = Regular
+font-size = 16
+
+# Cursor
+# ==========================
+cursor-color = "#b4befe"
+cursor-opacity = 0.7
+
+# Theme
+# ==========================
+theme = catppuccin-mocha
+
+# Background
+# ==========================
+background-opacity = 0.8
+background-blur = true
+
+# Window
+# ==========================
+window-padding-balance = true
+window-height = 510
+window-width = 1640
+window-save-state = always
+quit-after-last-window-closed = true
+
+# App Icon
+# ==========================
+macos-icon = custom-style
+macos-icon-ghost-color = #cba6f7
+macos-icon-screen-color = #313244,#1e1e2e,#181825,#11111b
+macos-icon-frame = beige
+
+# Shell
+# ==========================
+shell-integration = fish
+
+# Tabs
+# ==========================
+# CMD + s -> command setter
+keybind = cmd+s>shift+l=next_tab
+keybind = cmd+s>shift+h=previous_tab
+keybind = cmd+s>comma=move_tab:-1
+keybind = cmd+s>period=move_tab:1
+# To close a tab, CMD + w
+# quick tab switch
+keybind = cmd+s>1=goto_tab:1
+keybind = cmd+s>2=goto_tab:2
+keybind = cmd+s>3=goto_tab:3
+keybind = cmd+s>4=goto_tab:4
+keybind = cmd+s>5=goto_tab:5
+keybind = cmd+s>6=goto_tab:6
+keybind = cmd+s>7=goto_tab:7
+keybind = cmd+s>8=goto_tab:8
+keybind = cmd+s>9=goto_tab:9
+# split
+keybind = cmd+s>;=new_split:right
+keybind = cmd+s>'=new_split:down
+keybind = cmd+s>j=goto_split:bottom
+keybind = cmd+s>k=goto_split:top
+keybind = cmd+s>h=goto_split:left
+keybind = cmd+s>l=goto_split:right
+keybind = cmd+s>z=toggle_split_zoom
+keybind = cmd+s>e=equalize_splits

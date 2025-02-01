@@ -47,8 +47,10 @@ command -qv nvim && alias vim nvim
 
 alias p "cd ~/Projects/"
 
-if type -q exa
-  alias ll "exa -l -g --icons"
+alias w "cd ~/Work/"
+
+if type -q eza
+  alias ll "eza -l -g --icons"
   alias lla "ll -a"
 end
 
@@ -58,12 +60,29 @@ end
 
 function fish_greeting 
 end
-fish_add_path /Users/cristinavidal/.spicetify
+# fish_add_path /Users/cristinavidal/.spicetify
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-if test -f /Users/cristinavidal/anaconda3/bin/conda
-    eval /Users/cristinavidal/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+if test -f /Users/cristinavidal/miniconda3/bin/conda
+    eval /Users/cristinavidal/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+else
+    if test -f "/Users/cristinavidal/miniconda3/etc/fish/conf.d/conda.fish"
+        . "/Users/cristinavidal/miniconda3/etc/fish/conf.d/conda.fish"
+    else
+        set -x PATH "/Users/cristinavidal/miniconda3/bin" $PATH
+    end
 end
 # <<< conda initialize <<<
+
+set -x ANDROID_HOME $HOME/Library/Android/sdk
+set -x PATH $PATH $ANDROID_HOME/emulator $ANDROID_HOME/platform-tools
+
+# set -x JAVA_HOME /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+set -gx JAVA_HOME (/usr/libexec/java_home -v 21)
+set -gx PATH $JAVA_HOME/bin $PATH
+
+# PHP
+set PATH /Users/cristinavidal/.config/herd-lite/bin $PATH
+set PATH $HOME/.composer/vendor/bin $PATH
 
