@@ -171,6 +171,11 @@ nvim_lsp.pyright.setup {
   capabilities = capabilities,
 }
 
+nvim_lsp.jedi_language_server.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
 nvim_lsp.rust_analyzer.setup {
   on_attach = on_attach,
   capabilities = capabilities,
@@ -227,5 +232,4 @@ vim.diagnostic.config({
   float = {
     source = true, -- Or "if_many"
   },
-})
 })
