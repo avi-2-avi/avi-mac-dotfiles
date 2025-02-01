@@ -1,12 +1,32 @@
-### Last update: 29 May 2024
+### Last update: 1 Feb 2025
 
-- Terminal: iTerm2
+- Terminal: Ghostty
 - Shell: Fish
 - Nvim + Tmux
 
 # Mappings
 
-## Tmux Mappings
+## Ghostty
+
+Set action: `<Cmd-s>`
+
+| Mappings    | Action            |
+| ----------- | ----------------- |
+| `<Shift-h>` | Previous tab      |
+| `<Shift-l>` | Next tab          |
+| `,`         | Move tab left     |
+| `.`         | Move tab right    |
+| `[1-9]`     | Go to tab [1-9]   |
+| `;`         | Split tab right   |
+| `'`         | Split tab down    |
+| `j`         | Go to split down  |
+| `k`         | Go to split up    |
+| `h`         | Go to split left  |
+| `l`         | Go to split right |
+| `z`         | Toggle split zoom |
+| `e`         | Equalize splits   |
+
+## Tmux
 
 | Mappings     | Action               |
 | ------------ | -------------------- |
@@ -24,7 +44,7 @@
 | `<C-r><{>`   | Swap pane up         |
 | `<C-r><}>`   | Swap pane down       |
 
-## Nvim Mappings
+## Nvim
 
 | Mappings | Action                    |
 | -------- | ------------------------- |
