@@ -41,30 +41,30 @@ end
 
 protocol.CompletionItemKind = {
   '', -- Text
-  '', -- Method
-  '', -- Function
-  '', -- Constructor
-  '', -- Field
-  '', -- Variable
-  '', -- Class
-  'ﰮ', -- Interface
-  '', -- Module
-  '', -- Property
-  '', -- Unit
-  '', -- Value
-  '', -- Enum
-  '', -- Keyword
-  '﬌', -- Snippet
-  '', -- Color
-  '', -- File
-  '', -- Reference
-  '', -- Folder
-  '', -- EnumMember
+  '', -- Method (Alt icon: )
+  '', -- Function
+  '', -- Constructor
+  '', -- Field (Alt icon: )
+  '', -- Variable (Alt icon: )
+  '', -- Class (Alt icon: פּ)
+  '', -- Interface
+  '', -- Module
+  '', -- Property
+  '', -- Unit
+  '', -- Value
+  '', -- Enum
+  '', -- Keyword (Alt icon: )
+  '', -- Snippet
+  '', -- Color
+  '', -- File
+  '', -- Reference
+  '', -- Folder
+  '', -- EnumMember
   '', -- Constant
-  '', -- Struct
+  '', -- Struct
   '', -- Event
-  'ﬦ', -- Operator
-  '', -- TypeParameter
+  '', -- Operator
+  '', -- TypeParameter
 }
 
 -- Set up completion using nvim_cmp with LSP source
@@ -72,13 +72,6 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 nvim_lsp.flow.setup {
   on_attach = on_attach,
-  capabilities = capabilities
-}
-
-nvim_lsp.tsserver.setup {
-  on_attach = on_attach,
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-  cmd = { "typescript-language-server", "--stdio" },
   capabilities = capabilities
 }
 
@@ -133,6 +126,25 @@ nvim_lsp.volar.setup {
       tsdk = '/opt/homebrew/lib/node_modules/typescript/lib'
     }
   }
+}
+
+nvim_lsp.ts_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    plugins = {
+      {
+        name = "@vue/typescript-plugin",
+        location = "/usr/local/lib/node_modules/@vue/typescript-plugin",
+        languages = { "javascript", "typescript", "vue" },
+      },
+    },
+  },
+  filetypes = {
+    "javascript",
+    "typescript",
+    "vue",
+  },
 }
 
 nvim_lsp.terraformls.setup {
@@ -215,4 +227,5 @@ vim.diagnostic.config({
   float = {
     source = true, -- Or "if_many"
   },
+})
 })

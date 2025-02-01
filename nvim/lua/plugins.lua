@@ -24,7 +24,7 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope-file-browser.nvim'
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use 'windwp/nvim-autopairs'
-  use 'windwp/nvim-ts-autotag'
+  -- use 'windwp/nvim-ts-autotag'
   use 'norcalli/nvim-colorizer.lua'
   use({
     "iamcco/markdown-preview.nvim",
